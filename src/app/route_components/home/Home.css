@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    background:#DBDBDB;
+}
+
+#home{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#home h1{
+    font-weight:200;
+    color:#24A2D8;
+    text-align: center;
+}
+
+#home > h1{
+    margin-bottom:35vh;
+}
+
+#logo-wrap{
+    text-align: center;
+    display:block;
+    max-width:800px;
+    width:100%;
+    margin:auto;
+}
+
+#logo{
+    width:100%;
+}
