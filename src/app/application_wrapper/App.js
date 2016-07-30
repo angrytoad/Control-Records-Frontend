@@ -3,6 +3,14 @@ import DevTools from '../../_dev/DevTools';
 
 import './App.css';
 
+/**
+ * Import any other fonts that aren't part of materialize and the general stylesheet as this is where core
+ * styles go that aren't component/container specific.
+ */
+import '../general_use/css/general.css';
+import '../general_use/fonts/hacka.woff';
+import '../general_use/fonts/hacka.woff2';
+
 const environment = process.env.NODE_ENV;
 
 /**
