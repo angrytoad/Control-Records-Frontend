@@ -1,6 +1,8 @@
 import React from 'react';
 import DevTools from '../../_dev/DevTools';
 
+import './App.css';
+
 const environment = process.env.NODE_ENV;
 
 /**
