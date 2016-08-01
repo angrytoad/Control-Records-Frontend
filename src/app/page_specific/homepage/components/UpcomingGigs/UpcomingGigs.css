@@ -2,11 +2,15 @@
     background:#1A2226;
 }
 
-#upcoming-gigs h3{
+#upcoming-gigs > h3{
     font-family: 'hacka';
     color:#3C4E56;
 }
 
-#upcoming-gigs p{
+#upcoming-gigs > p{
     color:#3C4E56;
+}
+
+#upcoming-gigs{
+    overflow: auto;
 }

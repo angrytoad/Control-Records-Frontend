@@ -7,6 +7,7 @@ import { routerReducer } from 'react-router-redux';
  * Import your reducers below
  */
 import { test } from './_examples/example_reducer';
+import { gigs } from './app/page_specific/homepage/containers/UpcomingGigsLoader/reducers';
 
 /**
  * Add to the reducersList any reducers which are needed for the redux application, try to keep reducers separated
@@ -15,7 +16,8 @@ import { test } from './_examples/example_reducer';
  *
  */
 const reducerList = {
-  test
+  test,
+  gigs
 };
 
 reducerList.routing =  routerReducer;
