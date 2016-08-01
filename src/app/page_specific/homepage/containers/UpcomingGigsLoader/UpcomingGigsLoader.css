@@ -2,6 +2,6 @@
 
 .gigs-loader {
     overflow: auto;
-    height: 500px;
+    max-height: 500px;
     margin-bottom:15px;
 }
