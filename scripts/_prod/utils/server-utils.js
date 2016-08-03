@@ -9,6 +9,7 @@ export function createPage(html, initialState) {
       
       <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
       
       <link rel="shortcut icon" href="/favicon.ico">
       <link href="main.css" rel="stylesheet">
