@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
+import 'whatwg-fetch';
 
 /**
  * @author "Tom Freeborough"  <thomas@hotsnapper.com> (27 Jul 2016)
