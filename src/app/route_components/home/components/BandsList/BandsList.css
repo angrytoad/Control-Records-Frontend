@@ -1,0 +1,16 @@
+#BandsList{
+    background:#42392B;
+}
+
+#BandsList h3 {
+    font-family: 'hacka';
+    color: #635642;
+}
+
+#BandsList p{
+    color:#635642;
+}
+
+#BandListLoader{
+    margin-bottom:15px;
+}
