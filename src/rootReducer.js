@@ -7,7 +7,9 @@ import { routerReducer } from 'react-router-redux';
  * Import your reducers below
  */
 import { test } from './_examples/example_reducer';
-import { gigs } from './app/page_specific/homepage/containers/UpcomingGigsLoader/reducers';
+import { gigs } from './app/route_components/home/containers/UpcomingGigsLoader/reducers';
+import { news } from './app/route_components/home/containers/LatestNewsLoader/reducers';
+import { bands } from './app/route_components/home/containers/BandsListLoader/reducers';
 
 /**
  * Add to the reducersList any reducers which are needed for the redux application, try to keep reducers separated
@@ -17,7 +19,9 @@ import { gigs } from './app/page_specific/homepage/containers/UpcomingGigsLoader
  */
 const reducerList = {
   test,
-  gigs
+  gigs,
+  news,
+  bands
 };
 
 reducerList.routing =  routerReducer;

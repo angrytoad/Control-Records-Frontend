@@ -3,7 +3,7 @@ import './Home.css';
 
 import './logo.png';
 
-import HomepageGrid from '../../page_specific/homepage/components/HomepageGrid/HomepageGrid';
+import HomepageGrid from './components/HomepageGrid/HomepageGrid';
 
 const Home = (props) => {
   return (

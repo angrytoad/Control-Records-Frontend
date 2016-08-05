@@ -5,17 +5,17 @@ import './HomepageGrid.css';
 
 import HomepageBanner from '../HomepageBanner/HomepageBanner';
 import UpcomingGigs from '../UpcomingGigs/UpcomingGigs';
-import HomepageMediaGallery from '../HomepageMediaGallery/HomepageMediaGallery';
-import SocialMediaUpdates from '../SocialMediaUpdates/SocialMediaUpdates';
+import BandsList from '../BandsList/BandsList';
+import LatestNews from '../LatestNews/LatestNews';
 
 const HomepageGrid = () => {
   return (
     <div className="row">
       <HomepageBanner />
-
+  
+      <BandsList />
       <UpcomingGigs />
-      <SocialMediaUpdates />
-      <HomepageMediaGallery />
+      <LatestNews />
     </div>
   )
 };

@@ -2,12 +2,12 @@
 
 import { endpoint } from '../../../../../api.config';
 
-export const saveUpcomingGigs = gigs => ({ type: 'SAVE_UPCOMING_GIGS', data: gigs});
+export const saveLatestNews = articles => ({ type: 'SAVE_LATEST_NEWS', data: articles});
 
-export const loadUpcomingGigs = () => {
+export const loadLatestNews = () => {
 
   return dispatch => {
-    fetch(endpoint+'/gigs',{
+    fetch(endpoint+'/news/all',{
       method:'GET',
       headers: {
         'Accept': 'application/json',
@@ -22,8 +22,8 @@ export const loadUpcomingGigs = () => {
       })
       .then(res => res.json())
       .then(json => {
-        let gigs = json.gigs;
-        dispatch(saveUpcomingGigs(gigs))
+        let articles = json.articles;
+        dispatch(saveLatestNews(articles))
       })
       .catch(err => {
         console.log(err);

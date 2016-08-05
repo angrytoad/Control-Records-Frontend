@@ -5,7 +5,7 @@ import './UpcomingGigsLoader.css';
 
 import { loadUpcomingGigs } from './actions.js';
 
-import UpcomingGig from '../../components/UpcomingGig/UpcomingGig';
+import UpcomingGig from '../../components/UpcomingGigs/components/UpcomingGig/UpcomingGig.js';
 
 const mapStateToProps = ({gigs}) =>
   ({
