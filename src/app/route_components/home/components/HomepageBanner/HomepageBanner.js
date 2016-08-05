@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './HomepageBanner.css';
+import './logo.png';
 
 const HomepageBanner = () => {
   return (
@@ -8,7 +9,9 @@ const HomepageBanner = () => {
       <video id="banner-video" autoPlay="true" loop>
         <source src="assets/music.mp4" type="video/mp4" />
       </video>
-      <h1 id="banner-title" className="white-text">CONTROL RECORDS</h1>
+      <h1 id="banner-title" className="white-text">
+        <img src="/assets/logo.png" />
+      </h1>
     </div>
   )
 };

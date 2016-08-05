@@ -7,6 +7,12 @@
     color: #635642;
 }
 
+#BandsList h3 div{
+    margin-top:-15px;
+    opacity:0.5;
+    font-size:28px;
+}
+
 #BandsList p{
     color:#635642;
 }
