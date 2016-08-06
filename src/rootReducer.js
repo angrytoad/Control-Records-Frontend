@@ -10,6 +10,7 @@ import { test } from './_examples/example_reducer';
 import { gigs } from './app/route_components/home/containers/UpcomingGigsLoader/reducers';
 import { news } from './app/route_components/home/containers/LatestNewsLoader/reducers';
 import { bands } from './app/route_components/home/containers/BandsListLoader/reducers';
+import { activeBand } from './app/route_components/BandPage/containers/BandPageLoader/reducers';
 
 /**
  * Add to the reducersList any reducers which are needed for the redux application, try to keep reducers separated
@@ -21,7 +22,8 @@ const reducerList = {
   test,
   gigs,
   news,
-  bands
+  bands,
+  activeBand
 };
 
 reducerList.routing =  routerReducer;

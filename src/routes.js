@@ -10,6 +10,7 @@ import { Route } from 'react-router';
  */
 import App from './app/application_wrapper/App';
 import Home from './app/route_components/home/Home';
+import BandPage from './app/route_components/BandPage/BandPage';
 
 /**
  * Example Routes:
@@ -21,6 +22,7 @@ import Home from './app/route_components/home/Home';
 const routes = (
   <Route name="app" component={App} >
     <Route path="/" component={Home} />
+    <Route path="/band/:band_url" component={BandPage} />
   </Route>
 );
 
