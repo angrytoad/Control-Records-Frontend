@@ -6,6 +6,8 @@ import { createPage } from '../_prod/utils/server-utils'
 import { Provider } from 'react-redux';
 import Express from 'express';
 import compression from 'compression';
+require('es6-promise').polyfill();
+import 'isomorphic-fetch';
 
 /**
  * @author "Tom Freeborough"  <thomas@hotsnapper.com> (27 Jul 2016)

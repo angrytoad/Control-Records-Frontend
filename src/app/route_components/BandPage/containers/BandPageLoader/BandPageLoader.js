@@ -15,7 +15,7 @@ const mapStateToProps = ({ activeBand, band404 }) =>
 const mapDispatchToProps = dispatch =>
   ({
     loadBandPage: (band) => dispatch(loadBandPage(band)),
-    resetBandPage: (band) => dispatch(resetBandPage())
+    resetBandPage: () => dispatch(resetBandPage())
   });
 
 const BandPageLoader = React.createClass({

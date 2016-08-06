@@ -14,11 +14,11 @@ export function createPage(html, initialState) {
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
       
-      <link href="main.css" rel="stylesheet">
+      <link href="/main.css" rel="stylesheet">
     </head>
     <body>
       <div id="root">${html}</div>
-      <script src="main.js"></script>
+      <script src="/main.js"></script>
         <script>
           window.__INITIAL_STATE__ = ${JSON.stringify(initialState)}
         </script>
