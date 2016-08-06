@@ -10,3 +10,14 @@ export const activeBand = (state, action) => {
       return state || {};
   }
 }
+
+export const band404 = (state, action) => {
+  switch ( action.type ) {
+    case 'BAND_NOT_FOUND':
+      return true;
+    case 'RESET_ACTIVE_BAND':
+      return false;
+    default:
+      return state || false;
+  }
+}

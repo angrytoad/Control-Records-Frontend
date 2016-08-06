@@ -2,6 +2,7 @@
 import { endpoint } from '../../../../../api.config';
 
 export const setActiveBand = band => ({ type: 'SET_ACTIVE_BAND', data: band});
+export const showBand404 = () => ({ type: 'BAND_NOT_FOUND' });
 export const resetBandPage = () => ({ type: 'RESET_ACTIVE_BAND' })
 
 export const loadBandPage= (band_url) => {
@@ -25,7 +26,7 @@ export const loadBandPage= (band_url) => {
         dispatch(setActiveBand(json))
       })
       .catch(err => {
-        console.log(err);
+        dispatch(showBand404())
       })
   }
 };

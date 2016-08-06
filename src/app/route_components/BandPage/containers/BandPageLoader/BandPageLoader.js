@@ -4,10 +4,12 @@ import {connect} from 'react-redux';
 import { loadBandPage, resetBandPage } from './actions';
 
 import ActiveBandPage from '../../components/ActiveBandPage/ActiveBandPage';
+import Band404 from '../../components/Band404/Band404';
 
-const mapStateToProps = ({ activeBand }) =>
+const mapStateToProps = ({ activeBand, band404 }) =>
   ({
-    activeBand
+    activeBand,
+    band404
   });
 
 const mapDispatchToProps = dispatch =>
@@ -21,7 +23,13 @@ const BandPageLoader = React.createClass({
   render() {
     return (
       <div id="BandPageLoader">
-        <ActiveBandPage band={this.props.activeBand} />
+        { this.props.band404
+          ?
+          <Band404 />
+          :
+          <ActiveBandPage band={this.props.activeBand} />
+        }
+
       </div>
     )
   },
