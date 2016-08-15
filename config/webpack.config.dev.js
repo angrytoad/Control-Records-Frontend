@@ -62,6 +62,11 @@ module.exports = {
         loader: 'style!css!postcss'
       },
       {
+        test: /\.scss$/,
+        include: srcPath,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
         test: /\.json$/,
         loader: 'json'
       },
