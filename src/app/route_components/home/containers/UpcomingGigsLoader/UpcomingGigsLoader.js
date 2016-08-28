@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import './UpcomingGigsLoader.css';
+import './UpcomingGigsLoader.scss';
 
 import { loadUpcomingGigs } from './actions.js';
 

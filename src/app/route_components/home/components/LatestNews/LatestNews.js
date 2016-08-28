@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './LatestNews.css';
+import './LatestNews.scss';
 
 import LatestNewsLoader from '../../containers/LatestNewsLoader/LatestNewsLoader.js';
 

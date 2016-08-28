@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './music.mp4';
-import './HomepageGrid.css';
+import './HomepageGrid.scss';
 
 import HomepageBanner from '../HomepageBanner/HomepageBanner';
 import UpcomingGigs from '../UpcomingGigs/UpcomingGigs';

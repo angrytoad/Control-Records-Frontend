@@ -1,0 +1,27 @@
+@import "../../../../../../../app/general_use/css/core";
+
+#ActiveBandPageBanner{
+
+  position: absolute;
+  width:100%;
+  top:0px;
+  z-index:-1;
+
+  .banner-wrapper{
+    height:60vh;
+    width:100%;
+    overflow:hidden;
+    position: relative;
+  }
+
+  #banner-image{
+
+    position:absolute;
+    min-width:1400px;
+    width:100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}

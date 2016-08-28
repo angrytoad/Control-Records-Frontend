@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router';
 
-import './BandListItem.css';
+import './BandListItem.scss';
 
 const BandListItem = (props) => {
 

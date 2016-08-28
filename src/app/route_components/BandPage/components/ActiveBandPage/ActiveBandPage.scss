@@ -1,0 +1,14 @@
+@import "../../../../../app/general_use/css/core";
+
+#ActiveBandPage{
+
+  #ActiveBandPageTitle{
+    position: absolute;
+    color:$control_light_grey;
+    top:30vh;
+    margin-top:-5vh;
+    width:100%;
+    padding:2.5vh;
+    background:rgba(0,0,0,0.6);
+  }
+}

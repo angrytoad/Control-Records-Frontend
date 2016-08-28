@@ -1,0 +1,68 @@
+
+
+/**
+ * Define General Colours that we use on the site
+ */
+$control_black:#161616;
+$control_light_grey:#D8D8D8;
+
+$control_band_primary:#42392B;
+$control_band_secondary:#635642;
+
+$control_gig_primary:#1A2226;
+$control_gig_secondary:#3C4E56;
+$control_gig_light:#90A5B2;
+
+$control_news_primary:#283829;
+$control_news_secondary:#466048;
+
+$control_image_backer:#4D4D4D;
+
+
+/**
+ * Primary font names
+ */
+$primary_font:'hacka';
+
+@font-face {
+  font-family: 'hacka';
+  src: url('/assets/hacka.woff2') format('woff2'),
+  url('/assets/hacka.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3c4e56;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+

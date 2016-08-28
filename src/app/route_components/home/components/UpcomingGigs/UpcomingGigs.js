@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './UpcomingGigs.css';
+import './UpcomingGigs.scss';
 
 import UpcomingGigsLoader from '../../containers/UpcomingGigsLoader/UpcomingGigsLoader';
 

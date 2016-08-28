@@ -1,0 +1,16 @@
+@import "../../../../../app/general_use/css/core";
+
+
+#upcoming-gigs{
+  background:$control_gig_primary;
+  overflow: auto;
+}
+
+#upcoming-gigs > h3{
+  font-family: $primary_font;
+  color:$control_gig_secondary;
+}
+
+#upcoming-gigs > p{
+  color:$control_gig_secondary;
+}

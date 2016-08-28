@@ -1,0 +1,32 @@
+#Band404{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: url('/assets/404banner.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom:0px!important;
+}
+
+#Band404Banner{
+  width:200%;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Band404Wrapper{
+  padding:20px!important;
+  background:rgba(0,0,0,0.4);
+  border-radius:4px;
+}

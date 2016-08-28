@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './BandPage.css';
+import './BandPage.scss';
 
 import BandPageLoader from './containers/BandPageLoader/BandPageLoader';
 

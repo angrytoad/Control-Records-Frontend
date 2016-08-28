@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-import './UpcomingGig.css';
+import './UpcomingGig.scss';
 
 const UpcomingGig = (props) => {
   console.log(props.data);

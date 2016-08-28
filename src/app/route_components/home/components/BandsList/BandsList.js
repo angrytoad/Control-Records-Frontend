@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './BandsList.css';
+import './BandsList.scss';
 
 import BandsListLoader from '../../containers/BandsListLoader/BandsListLoader';
 

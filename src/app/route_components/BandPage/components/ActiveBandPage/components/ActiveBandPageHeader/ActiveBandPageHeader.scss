@@ -1,0 +1,35 @@
+@import "../../../../../../../app/general_use/css/core";
+
+#ActiveBandPageHeader{
+
+  margin-top:60vh;
+  min-height:128px;
+  background:rgba(255,255,255,0.1);
+  position: relative;
+
+  #avatar-wrapper{
+
+    position: absolute;
+    width:128px;
+    height:128px;
+    background:$control_image_backer;
+    left:5%;
+    top:-24px;
+    border-radius:5px;
+    border:2px solid $control_band_primary;
+
+    #avatar-image{
+      width:100%;
+    }
+  }
+
+  #non-avatar-wrapper{
+    margin-left:calc(10% + 128px);
+    padding:20px;
+
+    h2{
+      margin:0px;
+    }
+  }
+
+}

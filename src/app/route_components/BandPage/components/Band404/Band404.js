@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router';
 
-import './Band404.css';
+import './Band404.scss';
 import './404banner.jpg';
 
 const Band404 = () => {

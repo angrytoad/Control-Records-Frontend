@@ -1,0 +1,14 @@
+@import "../../../../../app/general_use/css/core";
+
+#LatestNews{
+  background:$control_news_primary;
+
+  h3{
+    font-family: $primary_font;
+    color:$control_news_secondary;
+  }
+
+  p{
+    color:$control_news_secondary;
+  }
+}

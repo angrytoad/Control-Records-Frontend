@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Home.scss';
 
 import HomepageGrid from './components/HomepageGrid/HomepageGrid';
 

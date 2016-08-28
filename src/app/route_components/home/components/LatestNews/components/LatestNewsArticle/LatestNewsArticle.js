@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './LatestNewsArticle.css';
+import './LatestNewsArticle.scss';
 
 const LatestNewsArticle = (props) => {
   return (

@@ -1,0 +1,24 @@
+@import "../../../../../app/general_use/css/core";
+
+#BandsList{
+  background:$control_band_primary;
+
+  h3 {
+    font-family: $primary_font;
+    color: $control_band_secondary;
+  }
+
+  h3 div{
+    margin-top:-15px;
+    opacity:0.5;
+    font-size:28px;
+  }
+
+  p{
+    color:$control_band_secondary;
+  }
+}
+
+#BandListLoader{
+  margin-bottom:15px;
+}
