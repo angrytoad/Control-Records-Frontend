@@ -26,6 +26,7 @@ export const loadBandPage = (band_url) => {
         dispatch(setActiveBand(json))
       })
       .catch(err => {
+        console.log(err);
         dispatch(showBand404())
       })
   }

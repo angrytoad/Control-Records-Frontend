@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './ActiveBandPageHeader.scss';
+import './404avatar.png';
 
 const ActiveBandPageHeader = (props) => {
   return (
@@ -9,15 +10,19 @@ const ActiveBandPageHeader = (props) => {
         {
           typeof props.extra !== 'undefined'
             ?
-            <img id="avatar-image" src={props.extra.avatar_url} />
+            <div>
+              {
+                props.extra.avatar_url !== null
+                ?
+                  <img id="avatar-image" src={props.extra.avatar_url} />
+                :
+                  <img id="avatar-image" src="/assets/404avatar.png" />
+              }
+            </div>
+
             :
             false
         }
-      </div>
-      <div id="non-avatar-wrapper" className="row">
-        <div className="col s12">
-          <h2>This is just to show the avatar for now</h2>
-        </div>
       </div>
     </div>
   )

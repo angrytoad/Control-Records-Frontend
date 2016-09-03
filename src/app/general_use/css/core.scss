@@ -24,6 +24,16 @@ $control_image_backer:#4D4D4D;
  */
 $primary_font:'hacka';
 
+
+@mixin no-select() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 @font-face {
   font-family: 'hacka';
   src: url('/assets/hacka.woff2') format('woff2'),

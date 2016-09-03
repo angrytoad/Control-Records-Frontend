@@ -1,0 +1,18 @@
+@import "../../../../../../../../general_use/css/core";
+
+#ActiveBandPageContentAbout{
+
+  h2{
+    font-weight:200!important;
+    color:$control_light_grey;
+  }
+
+  #about-text{
+    color:$control_light_grey;
+
+    a{
+      color:$control_band_secondary;
+      font-weight:700;
+    }
+  }
+}
