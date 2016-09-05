@@ -14,5 +14,18 @@
       color:$control_band_secondary;
       font-weight:700;
     }
+
+    ul{
+      padding-left:40px;
+
+
+      > li{
+        list-style-type:disc;
+      }
+
+      ul li{
+        list-style-type: circle;
+      }
+    }
   }
 }
