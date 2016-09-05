@@ -6,6 +6,8 @@ import BandPageLoader from './containers/BandPageLoader/BandPageLoader';
 
 const BandPage = (props) => {
 
+  console.log(props);
+
   return (
     <div id="BandPage" className="page">
       <BandPageLoader url_name={props.params.band_url} />

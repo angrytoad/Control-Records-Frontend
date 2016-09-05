@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import ActiveBandPageBanner from './components/ActiveBandPageBanner/ActiveBandPageBanner';
 import ActiveBandPageHeader from './components/ActiveBandPageHeader/ActiveBandPageHeader';
@@ -10,6 +11,7 @@ const ActiveBandPage = (props) => {
   
   return (
     <div id="ActiveBandPage">
+      <Helmet title={props.band.name} />
       <h3 id="ActiveBandPageTitle" className="center-align">{props.band.name}</h3>
       <ActiveBandPageBanner extra={props.band.extra} />
       <ActiveBandPageHeader extra={props.band.extra} />

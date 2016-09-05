@@ -5,7 +5,10 @@ import './ActiveBandPageContentRecentMusic.scss';
 const ActiveBandPageContentRecentMusic = () => {
   return (
     <div id="ActiveBandPageContentRecentMusic">
-      <h2>Recently Added</h2>
+      <h4>Recently Added Music</h4>
+      <p className="flow-text">
+        <i>Nothing has been uploaded yet, but it will be soon. you just watch this space!</i>
+      </p>
     </div>
   )
 };

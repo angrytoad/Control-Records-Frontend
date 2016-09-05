@@ -1,8 +1,10 @@
 @import "../../../../../../../../general_use/css/core";
 
 #ActiveBandPageContentRecentMusic{
-  h2{
+  color:$control_light_grey;
+
+  h4{
     font-weight: 200 !important;
-    color: #D8D8D8;
+    color: $control_light_grey;
   }
 }

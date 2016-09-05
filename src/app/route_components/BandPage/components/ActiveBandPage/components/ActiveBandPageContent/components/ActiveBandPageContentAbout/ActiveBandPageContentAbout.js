@@ -15,7 +15,7 @@ const ActiveBandPageContentAbout = (props) => {
 
   return (
     <div id="ActiveBandPageContentAbout">
-      <h2>About {props.band.name}</h2>
+      <h4>About {props.band.name}</h4>
       <div id="about-text" className="flow-text" dangerouslySetInnerHTML={html}></div>
     </div>
   )
