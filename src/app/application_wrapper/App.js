@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import DevTools from '../../_dev/DevTools';
 
 import './App.scss';
@@ -23,7 +24,23 @@ const environment = process.env.NODE_ENV;
  */
 const App = (props) => {
   return (
-    <div>
+    <div id="App">
+      <Helmet
+        titleTemplate="%s | Control Records"
+        defaultTitle="Control Records"
+        link={[
+          {"rel": "stylesheet", "href": "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css", "type": "text/css"},
+          {"rel": "stylesheet", "href": "https://fonts.googleapis.com/icon?family=Material+Icons", "type": "text/css" },
+          {"rel": "shortcut icon", "href": "/favicon.ico"}
+        ]}
+        script={[
+          {"src": "https://cdn.polyfill.io/v2/polyfill.min.js"}
+        ]}
+        meta={[
+          {"charset": "utf-8"},
+          {"name": "viewport", "content": "width=device-width,initial-scale=1"}
+        ]}
+      />
       {props.children}
       {environment === 'development'
         ?
