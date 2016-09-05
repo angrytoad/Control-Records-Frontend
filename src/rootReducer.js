@@ -11,6 +11,7 @@ import { gigs } from './app/route_components/home/containers/UpcomingGigsLoader/
 import { news } from './app/route_components/home/containers/LatestNewsLoader/reducers';
 import { bands } from './app/route_components/home/containers/BandsListLoader/reducers';
 import { activeBand, band404 } from './app/route_components/BandPage/containers/BandPageLoader/reducers';
+import { activeNews, news404 } from './app/route_components/NewsPage/containers/NewsPageLoader/reducers';
 
 /**
  * Add to the reducersList any reducers which are needed for the redux application, try to keep reducers separated
@@ -24,7 +25,9 @@ const reducerList = {
   news,
   bands,
   activeBand,
-  band404
+  band404,
+  activeNews,
+  news404
 };
 
 reducerList.routing =  routerReducer;

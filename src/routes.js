@@ -11,6 +11,7 @@ import { Route } from 'react-router';
 import App from './app/application_wrapper/App';
 import Home from './app/route_components/home/Home';
 import BandPage from './app/route_components/BandPage/BandPage';
+import NewsPage from './app/route_components/NewsPage/NewsPage';
 
 /**
  * Example Routes:
@@ -23,6 +24,7 @@ const routes = (
   <Route name="app" component={App} >
     <Route path="/" component={Home} />
     <Route path="/band/:band_url" component={BandPage} />
+    <Route path="/news/:news_url" component={NewsPage} />
   </Route>
 );
 
