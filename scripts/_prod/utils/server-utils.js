@@ -1,8 +1,15 @@
-export function createPage(html, initialState) {
+export function createPage(html, head, initialState) {
   return `
   <!doctype html>
-  <html>
+  <html ${head.htmlAttributes.toString()}>
     <head>
+        ${head.title.toString()}
+        ${head.meta.toString()}
+        ${head.link.toString()}
+        ${head.script.toString()}
+        ${head.style.toString()}
+        ${head.base.toString()}
+        
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </head>
     <body>

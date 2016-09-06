@@ -1,5 +1,6 @@
 import 'ignore-styles'
 import React from 'react'
+import Helmet from 'react-helmet';
 import { renderToString } from 'react-dom/server'
 import { match, RouterContext } from 'react-router'
 import { createPage } from '../_prod/utils/server-utils'
@@ -52,9 +53,10 @@ function createServer(req, res){
   });
   // Grab the initial state from our Redux store
   const initialState = store.getState();
+  const head = Helmet.rewind();
 
   // Send the rendered page back to the client with our current state
-  res.send(createPage(html, initialState))
+  res.send(createPage(html,head, initialState))
 
 }
 
