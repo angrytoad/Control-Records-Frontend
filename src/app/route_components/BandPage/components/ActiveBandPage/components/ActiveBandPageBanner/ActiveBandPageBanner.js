@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import './ActiveBandPageBanner.scss';
 
@@ -14,7 +15,14 @@ const ActiveBandPageBanner = (props) => {
             {
               props.extra.banner_url !== null
               ?
-                <img id="banner-image" src={props.extra.banner_url} />
+                <div>
+                  <Helmet
+                    meta={[
+                      {'property':'og:image', 'content':props.extra.banner_url}
+                    ]}
+                  />
+                  <img id="banner-image" src={props.extra.banner_url} />
+                </div>
               :
                 <img id="banner-image" src="/assets/404banner.jpg" />
             }

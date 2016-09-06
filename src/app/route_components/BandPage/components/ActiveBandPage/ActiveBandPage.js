@@ -11,7 +11,13 @@ const ActiveBandPage = (props) => {
   
   return (
     <div id="ActiveBandPage">
-      <Helmet title={props.band.name} />
+      <Helmet
+        title={props.band.name}
+        meta={[
+          {'property':'og:type', 'content':'article'},
+          {'property':'og:title', 'content':props.band.name},
+        ]}
+      />
       <h3 id="ActiveBandPageTitle" className="center-align">{props.band.name}</h3>
       <ActiveBandPageBanner extra={props.band.extra} />
       <ActiveBandPageHeader extra={props.band.extra} />
