@@ -9,11 +9,12 @@ import ActiveBandPageContentMusicDisplayer from './components/ActiveBandPageCont
 
 
 const ActiveBandPageContent = (props) => {
+  console.log(props.band);
   return (
     <div id="ActiveBandPageContent">
       <div className="container">
         <div className="row">
-          <div className="col s12  m6 l8 left-column">
+          <div className="col s12  m6 l6 left-column">
             {
               typeof props.band.music !== 'undefined'
                 ?
@@ -30,8 +31,8 @@ const ActiveBandPageContent = (props) => {
                 false
             }
           </div>
-          <div className="col s12 m6 l4 right-column">
-            <ActiveBandPageContentUpcomingGigs band={props.band} />
+          <div className="col s12 m6 l6 right-column">
+            <ActiveBandPageContentRecentMusic band={props.band} />
           </div>
         </div>
         <div className="row">
@@ -52,9 +53,31 @@ const ActiveBandPageContent = (props) => {
                 false
             }
           </div>
-          <div className="col s12 m6 l6 right-column">
-            <ActiveBandPageContentRecentMusic band={props.band} />
-          </div>
+          {
+            typeof props.band.gigs !== 'undefined'
+              ?
+              <div className="col s12 m6 l6 right-column">
+                {
+                  props.band.gigs !== null
+                    ?
+                    <div>
+                      <h4>Upcoming Gigs</h4>
+                      <ActiveBandPageContentUpcomingGigs band={props.band} />
+                    </div>
+                    :
+                    <div className="upcoming-gigs-empty">
+                      <h4>Upcoming Gigs</h4>
+                      <p className="flow-text">
+                        <i>{props.band.name} does not currently have any upcoming gigs, but stay tuned as they might do soon!</i>
+                      </p>
+                    </div>
+                }
+
+              </div>
+              :
+              false
+          }
+
         </div>
       </div>
     </div>

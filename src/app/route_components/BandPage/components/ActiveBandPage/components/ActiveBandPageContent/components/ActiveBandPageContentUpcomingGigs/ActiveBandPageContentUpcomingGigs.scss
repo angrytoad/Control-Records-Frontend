@@ -1,8 +1,14 @@
 @import "../../../../../../../../general_use/css/core";
 
 #ActiveBandPageContentUpcomingGigs{
-  h2{
-    font-weight: 200 !important;
-    color: #D8D8D8;
+
+  .row{
+    margin-bottom:0px;
+  }
+
+  .gig-wrapper{
+    max-height:500px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }

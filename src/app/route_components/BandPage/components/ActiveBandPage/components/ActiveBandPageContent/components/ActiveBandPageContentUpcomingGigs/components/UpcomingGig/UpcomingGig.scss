@@ -1,0 +1,27 @@
+@import "../../../../../../../../../../general_use/css/core";
+
+#ActiveBandPageContentUpcomingGigs{
+
+  .upcoming-gig{
+
+    padding:5px 15px;
+    min-height:100px;
+
+    .date{
+      opacity:1;
+      color:$control_light_grey;
+    }
+
+    &:hover{
+      background:$control_band_primary;
+    }
+
+    .upcoming-gig-title{
+      margin-bottom:0px;
+
+      h4{
+        margin:0px;
+      }
+    }
+  }
+}
