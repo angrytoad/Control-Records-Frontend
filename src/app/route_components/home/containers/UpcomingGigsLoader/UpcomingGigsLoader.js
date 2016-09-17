@@ -25,7 +25,16 @@ const UpcomingGigsLoader = React.createClass({
     });
     return (
       <div className="gigs-loader">
-        {gigs}
+        {
+          gigs.length > 0
+          ?
+          {gigs}
+          :
+          <p className="flow-text center-align no-gigs">
+            <i>Stay tuned for more upcoming gigs!</i>
+          </p>
+        }
+
       </div>
     )
   },

@@ -1,7 +1,11 @@
-
+@import "../../../../general_use/css/core";
 
 .gigs-loader {
   overflow: auto;
   max-height: 500px;
   margin-bottom:15px;
+
+  .no-gigs{
+    color:$control_gig_secondary;
+  }
 }

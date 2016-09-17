@@ -4,6 +4,8 @@ import DevTools from '../../_dev/DevTools';
 
 import './App.scss';
 
+import Menu from '../general_use/components/Menu/Menu';
+
 /**
  * Import any other fonts that aren't part of materialize and the general stylesheet as this is where core
  * styles go that aren't component/container specific.
@@ -41,6 +43,7 @@ const App = (props) => {
           {"name": "viewport", "content": "width=device-width,initial-scale=1"}
         ]}
       />
+      <Menu />
       {props.children}
       {environment === 'development'
         ?
