@@ -11,8 +11,17 @@ const BandListItem = (props) => {
   return (
     <Link to={"/band/"+props.data.band.url_name}>
       <div className="BandListItem valign-wrapper">
-        <i className="material-icons right white-text goto">chevron_right</i>
-        <h4 className="title">{props.data.band.name}</h4>
+        {
+          props.data.band.avatar.length > 0
+            ?
+            <img className="band-list-avatar goto right" src={props.data.band.avatar} />
+            :
+            <img className="band-list-avatar goto right" src="/assets/404avatar.png" />
+        }
+        <h4 className="title">
+
+          {props.data.band.name}
+        </h4>
       </div>
     </Link>
   )

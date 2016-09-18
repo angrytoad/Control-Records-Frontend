@@ -10,6 +10,7 @@ import { test } from './_examples/example_reducer';
 import { gigs } from './app/route_components/home/containers/UpcomingGigsLoader/reducers';
 import { news } from './app/route_components/home/containers/LatestNewsLoader/reducers';
 import { bands } from './app/route_components/home/containers/BandsListLoader/reducers';
+import { venues } from './app/route_components/home/components/VenueSupportBanner/containers/VenueLoader/reducers'
 import { activeBand, band404 } from './app/route_components/BandPage/containers/BandPageLoader/reducers';
 import { activeNews, news404 } from './app/route_components/NewsPage/containers/NewsPageLoader/reducers';
 
@@ -24,6 +25,7 @@ const reducerList = {
   gigs,
   news,
   bands,
+  venues,
   activeBand,
   band404,
   activeNews,

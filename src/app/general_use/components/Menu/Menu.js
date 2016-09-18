@@ -4,8 +4,10 @@ import { Link } from 'react-router';
 
 import './Menu.scss';
 
-const mapStateToProps = ({}) =>
-  ({});
+const mapStateToProps = ({test}) =>
+  ({
+    test
+  });
 
 const mapDispatchToProps = dispatch =>
   ({});
@@ -19,14 +21,12 @@ const Menu = React.createClass({
   },
 
   handleOpenMenu() {
-    console.log('OPEN MENU');
     this.setState({
       toggleOpen:true
     })
   },
 
   handleCloseMenu() {
-    console.log('CLOSE MENU');
     this.setState({
       toggleOpen:false 
     })

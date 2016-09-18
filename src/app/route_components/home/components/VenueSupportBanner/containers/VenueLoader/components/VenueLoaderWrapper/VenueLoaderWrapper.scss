@@ -1,0 +1,65 @@
+@import "../../../../../../../../general_use/css/core";
+
+#VenueLoaderWrapper{
+  ul{
+    li{
+      display:inline-block;
+      width:10%;
+      text-align: center;
+      vertical-align: top;
+      margin:5px;
+      background: $control_gig_primary;
+      border-radius:4px;
+    }
+
+    li:nth-child(n+10){
+      display:none;
+    }
+
+    @media screen and (max-width:992px){
+      li:nth-child(n+5) {
+        display: none;
+      }
+
+      li{
+        width:20%;
+      }
+    }
+
+    @media screen and (max-width:600px){
+      li{
+        width:40%;
+      }
+    }
+
+    .venue-carriage{
+      position: relative;
+      background-size: cover;
+      overflow:hidden;
+      border-radius:4px;
+      max-height:120px;
+      min-height:120px;
+      opacity:0.7;
+
+      .logo{
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity:0.4;
+      }
+
+      span{
+        background:rgba(0,0,0,0.5);
+        font-size:20px;
+        color:$control_light_grey;
+        width:100%;
+        padding-left:10px;
+        padding-right:10px;
+      }
+    }
+
+    .no-logo{
+      height:120px;
+    }
+  }
+}

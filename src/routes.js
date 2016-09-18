@@ -12,6 +12,7 @@ import App from './app/application_wrapper/App';
 import Home from './app/route_components/home/Home';
 import BandPage from './app/route_components/BandPage/BandPage';
 import NewsPage from './app/route_components/NewsPage/NewsPage';
+import VenuePage from './app/route_components/VenuePage/VenuePage';
 
 /**
  * Example Routes:
@@ -25,6 +26,7 @@ const routes = (
     <Route path="/" component={Home} />
     <Route path="/band/:band_url" component={BandPage} />
     <Route path="/news/:news_url" component={NewsPage} />
+    <Route path="/venue/:venue_url" component={VenuePage} />
   </Route>
 );
 
