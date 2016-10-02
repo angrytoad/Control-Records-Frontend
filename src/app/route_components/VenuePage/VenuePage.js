@@ -2,10 +2,12 @@ import React from 'react';
 
 import './VenuePage.scss';
 
-const VenuePage = () => {
+import VenuePageLoader from './containers/VenuePageLoader/VenuePageLoader';
+
+const VenuePage = (props) => {
   return (
     <div id="VenuePage">
-      <h2 className="title">We're currently working on this page, check back later.</h2>
+      <VenuePageLoader url_name={props.params.venue_url} />
     </div>
   )
 };

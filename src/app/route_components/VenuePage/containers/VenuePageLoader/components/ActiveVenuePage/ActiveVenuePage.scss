@@ -1,0 +1,21 @@
+@import "../../../../../../general_use/css/core";
+
+#ActiveVenuePage{
+  .venue-page-logo{
+    margin:auto;
+    display:block;
+    margin-top:20px;
+    max-width:360px;
+    width:100%;
+  }
+
+  #ActiveVenuePageTitle{
+    font-weight:200;
+    color:$control_light_grey;
+  }
+
+  .title{
+    font-weight:200;
+    color:$control_light_grey;
+  }
+}

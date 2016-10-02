@@ -36,7 +36,8 @@ const App = (props) => {
           {"rel": "shortcut icon", "href": "/favicon.ico"}
         ]}
         script={[
-          {"src": "https://cdn.polyfill.io/v2/polyfill.min.js"}
+          {"src": "https://cdn.polyfill.io/v2/polyfill.min.js"},
+          {"src": "https://maps.googleapis.com/maps/api/js?key=AIzaSyCymOhYZOqDT9vQ4zBKGpiv0e8fxLeL2Ck"}
         ]}
         meta={[
           {"charset": "utf-8"},
