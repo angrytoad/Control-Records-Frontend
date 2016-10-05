@@ -20,15 +20,20 @@ const mapDispatchToProps = dispatch =>
 const UpcomingGigsLoader = React.createClass({
 
   render() {
-    const gigs = Object.keys(this.props.gigs).map((ele, index) => {
-        return <UpcomingGig data={this.props.gigs[ele]} key={index} />
-    });
+
+    const gigs = Object.keys(this.props.gigs).map((element, index) => {
+        return <UpcomingGig data={this.props.gigs[index]} key={index}/>
+      });
+
+
     return (
       <div className="gigs-loader">
         {
           gigs.length > 0
           ?
-          {gigs}
+            <div>
+              {gigs}
+            </div>
           :
           <p className="flow-text center-align no-gigs">
             <i>Stay tuned for more upcoming gigs!</i>

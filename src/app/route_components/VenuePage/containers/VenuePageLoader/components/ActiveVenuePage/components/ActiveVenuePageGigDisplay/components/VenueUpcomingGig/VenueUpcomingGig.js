@@ -5,7 +5,7 @@ import './VenueUpcomingGig.scss';
 
 const VenueUpcomingGig = (props) => {
   
-  let coordinates = JSON.parse(props.data.venue.coordinates);
+  console.log(props);
   
   return (
     <div className="col s12 m6 l4 VenueUpcomingGig">

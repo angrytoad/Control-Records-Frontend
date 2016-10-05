@@ -6,8 +6,6 @@ import './BandListItem.scss';
 
 const BandListItem = (props) => {
 
-  console.log(props);
-
   return (
     <Link to={"/band/"+props.data.band.url_name}>
       <div className="BandListItem valign-wrapper">

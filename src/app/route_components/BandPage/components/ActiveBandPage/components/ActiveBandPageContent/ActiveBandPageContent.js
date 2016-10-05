@@ -9,7 +9,6 @@ import ActiveBandPageContentMusicDisplayer from './components/ActiveBandPageCont
 
 
 const ActiveBandPageContent = (props) => {
-  console.log(props.band);
   return (
     <div id="ActiveBandPageContent">
       <div className="container">

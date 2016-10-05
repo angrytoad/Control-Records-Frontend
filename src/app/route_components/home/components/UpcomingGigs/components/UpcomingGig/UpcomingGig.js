@@ -4,7 +4,7 @@ import moment from 'moment';
 import './UpcomingGig.scss';
 
 const UpcomingGig = (props) => {
-  console.log(props.data);
+
   return (
     <div className="col s12 m6 l6">
       <div className="upcoming-gig">
