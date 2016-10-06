@@ -18,7 +18,7 @@ const ActiveBandPage = (props) => {
           {'property':'og:title', 'content':props.band.name},
         ]}
       />
-      <h3 id="ActiveBandPageTitle" className="center-align">{props.band.name}</h3>
+      <h3 id="ActiveBandPageTitle" className="center-align">{props.band.name}</h3> 
       <ActiveBandPageBanner extra={props.band.extra} />
       <ActiveBandPageHeader extra={props.band.extra} />
       <ActiveBandPageContent band={props.band} />

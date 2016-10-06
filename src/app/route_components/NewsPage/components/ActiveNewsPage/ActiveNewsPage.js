@@ -35,7 +35,7 @@ const ActiveNewsPage = (props) => {
         ]}
       />
 
-      <h2 id="ActiveNewsPageTitle" className="center-align">{props.news.title}</h2>
+      <h4 id="ActiveNewsPageTitle" className="center-align">{props.news.title}</h4>
       <div className="banner-wrapper">
         <img id="banner-image" src="/assets/404banner.jpg" />
       </div>
