@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router';
+import { Route, IndexRoute } from 'react-router';
 
 /**
  * @author "Tom Freeborough"  <thomas@hotsnapper.com> (27 Jul 2016)
@@ -14,6 +14,9 @@ import BandPage from './app/route_components/BandPage/BandPage';
 import NewsPage from './app/route_components/NewsPage/NewsPage';
 import VenuePage from './app/route_components/VenuePage/VenuePage';
 
+import Store from './app/route_components/Store/Store';
+import StoreIndex from './app/route_components/Store/components/StoreIndex/StoreIndex';
+
 /**
  * Example Routes:
  *
@@ -27,6 +30,9 @@ const routes = (
     <Route path="/band/:band_url" component={BandPage} />
     <Route path="/news/:news_url" component={NewsPage} />
     <Route path="/venue/:venue_url" component={VenuePage} />
+    <Route name="store" path="/store" component={Store}>
+      <IndexRoute component={StoreIndex} />
+    </Route>
   </Route>
 );
 

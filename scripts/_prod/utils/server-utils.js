@@ -9,7 +9,7 @@ export function createPage(html, head, initialState) {
         ${head.script.toString()}
         ${head.style.toString()}
         ${head.base.toString()}
-        
+      <meta name="google-site-verification" content="8yfLls5NnpQmwGfcNuMfAKHm3VacSDRKq2gJMQVgM_8" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </head>
     <body>

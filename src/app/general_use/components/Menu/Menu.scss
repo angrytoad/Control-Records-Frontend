@@ -34,13 +34,14 @@
     ul{
 
       a{
-        color:$control_band_secondary;
+        color:$control_black;
         font-size:2rem;
 
         li{
-          background:$control_band_primary;
+          background:rgba(255,255,255,0.4);
           padding-left:5px;
           padding-right:5px;
+          margin-bottom: 3px;
         }
       }
     }
