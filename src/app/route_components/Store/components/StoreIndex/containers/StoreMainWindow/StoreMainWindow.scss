@@ -1,0 +1,52 @@
+@import "../../../../../../general_use/css/core";
+
+#StoreMainWindow {
+  width: 100%;
+  padding: 20px;
+
+  > .row {
+    margin: 0px;
+    width:100%;
+
+    > .col:first-child{
+      background: orange;
+      padding:0px;
+    }
+
+    > .col:last-child{
+      background:blue;
+    }
+  }
+
+  #LoadingTheStore{
+    margin-top:150px;
+    text-align: center;
+    opacity:0.3;
+
+    h2{
+      color:$control_light_grey;
+      font-weight:300;
+      text-align:center;
+    }
+
+    i{
+      color:$control_light_grey;
+      font-size:20vw;
+      animation-name: rotating;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @media screen and (max-width:600px){
+      i{
+        font-size:40vw;
+      }
+    }
+
+    @keyframes rotating {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  }
+}

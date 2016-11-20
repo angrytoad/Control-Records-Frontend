@@ -1,0 +1,67 @@
+@import "../../../../../../../../general_use/css/core";
+
+#FeaturedStoreArticle{
+  padding:0px;
+  max-height:350px;
+  margin-bottom:0.75rem;
+
+  .article-image{
+    overflow:hidden;
+    max-height:350px;
+    height:350px;
+    position: relative;
+
+    img{
+      position: absolute;
+      left:50%;
+      top:50%;
+      max-width:900px;
+      min-height:350px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .article-text-wrapper{
+    position: relative;
+
+    .article-text{
+      padding:20px;
+      background:$store_grey;
+      color:$control_light_grey;
+      max-height:350px;
+      height:350px;
+      position: relative;
+      overflow-y: auto;
+
+      h4{
+        margin:0px;
+        font-weight:300;
+        margin-bottom:15px;
+      }
+
+      div{
+        padding-bottom:20px;
+      }
+    }
+
+    button{
+      background:$control_news_secondary;
+      position: absolute;
+      left:0.75rem;
+      padding:0px;
+      width:48px;
+      height:48px;
+      bottom:0;
+
+      i{
+        line-height: 48px;
+        font-size:2.3rem;
+        transform:rotate(-45deg);
+      }
+    }
+
+
+  }
+
+
+}

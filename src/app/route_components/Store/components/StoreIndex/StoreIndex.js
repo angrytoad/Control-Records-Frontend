@@ -1,7 +1,7 @@
 import React from 'react';
 
 import StoreSearch from './containers/StoreSearch/StoreSearch';
-import StoreMainWindow from './components/StoreMainWindow/StoreMainWindow';
+import StoreMainWindow from './containers/StoreMainWindow/StoreMainWindow';
 
 const StoreIndex = React.createClass({
 

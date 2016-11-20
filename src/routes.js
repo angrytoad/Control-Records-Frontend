@@ -16,7 +16,9 @@ import VenuePage from './app/route_components/VenuePage/VenuePage';
 
 import Store from './app/route_components/Store/Store';
 import StoreIndex from './app/route_components/Store/components/StoreIndex/StoreIndex';
-
+import StoreAlbumPage from './app/route_components/Store/components/StoreAlbumPage/StoreAlbumPage';
+import StoreArtistPage from './app/route_components/Store/components/StoreArtistPage/StoreArtistPage';
+import StoreSongPage from './app/route_components/Store/components/StoreSongPage/StoreSongPage';
 /**
  * Example Routes:
  *
@@ -32,6 +34,9 @@ const routes = (
     <Route path="/venue/:venue_url" component={VenuePage} />
     <Route name="store" path="/store" component={Store}>
       <IndexRoute component={StoreIndex} />
+      <Route path="album/:album_url" component={StoreAlbumPage} />
+      <Route path="artist/:artist_url" component={StoreArtistPage} />
+      <Route path="song/:song_url" component={StoreSongPage} />
     </Route>
   </Route>
 );

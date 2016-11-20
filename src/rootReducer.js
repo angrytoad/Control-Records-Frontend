@@ -15,6 +15,7 @@ import { activeBand, band404 } from './app/route_components/BandPage/containers/
 import { activeNews, news404 } from './app/route_components/NewsPage/containers/NewsPageLoader/reducers';
 import { activeVenue, venue404 } from './app/route_components/VenuePage/containers/VenuePageLoader/reducers';
 import { storeSearchResults, storeSearchLoading } from './app/route_components/Store/components/StoreIndex/containers/StoreSearch/reducers';
+import { featuredStoreInformation } from './app/route_components/Store/components/StoreIndex/containers/StoreMainWindow/reducers';
 
 /**
  * Add to the reducersList any reducers which are needed for the redux application, try to keep reducers separated
@@ -33,9 +34,14 @@ const reducerList = {
   activeNews,
   news404,
   activeVenue,
-  venue404, 
+  venue404,
+
+  /**
+   * Store Reducers
+   */
   storeSearchResults,
-  storeSearchLoading
+  storeSearchLoading,
+  featuredStoreInformation
 };
 
 reducerList.routing =  routerReducer;
