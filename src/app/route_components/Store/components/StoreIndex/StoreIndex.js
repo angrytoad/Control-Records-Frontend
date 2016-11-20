@@ -1,11 +1,15 @@
 import React from 'react';
 
+import StoreSearch from './containers/StoreSearch/StoreSearch';
+import StoreMainWindow from './components/StoreMainWindow/StoreMainWindow';
+
 const StoreIndex = React.createClass({
 
   render() {
     return (
       <div id="StoreIndex">
-        <h2>Welcome to the store</h2>
+        <StoreSearch />
+        <StoreMainWindow />
       </div>
     )
   }

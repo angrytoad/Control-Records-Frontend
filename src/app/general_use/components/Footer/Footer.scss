@@ -1,0 +1,32 @@
+@import '../../css/core';
+
+#Footer{
+  padding:20px;
+  width:100%;
+  background:$control_gig_primary;
+
+  ul{
+    text-align: center;
+    margin:0px;
+
+
+    a{
+      color:$control_gig_secondary;
+      font-size:2rem;
+      font-weight:300;
+
+      &:hover{
+        color:$control_gig_light;
+      }
+
+      li{
+        display:inline-block;
+        margin-left:25px;
+        margin-right:25px;
+      }
+    }
+
+  }
+
+
+}

@@ -49,6 +49,8 @@ const Menu = React.createClass({
                 <ul className="flow-text">
                   <Link to="/"><li onClick={this.handleCloseMenu}>Homepage</li></Link>
                   <Link to="/store"><li onClick={this.handleCloseMenu}>Store</li></Link>
+                  <Link to="/about-us"><li onClick={this.handleCloseMenu}>Our Story</li></Link>
+                  <Link to="/contact-us"><li onClick={this.handleCloseMenu}>Sign with us</li></Link>
                 </ul>
               </div>
             </div>
@@ -64,6 +66,8 @@ const Menu = React.createClass({
                 <ul className="flow-text">
                   <Link to="/"><li onClick={this.handleCloseMenu}>Homepage</li></Link>
                   <Link to="/store"><li onClick={this.handleCloseMenu}>Store</li></Link>
+                  <Link to="/about-us"><li onClick={this.handleCloseMenu}>Our Story</li></Link>
+                  <Link to="/contact-us"><li onClick={this.handleCloseMenu}>Sign with us</li></Link>
                 </ul>
               </div>
             </div>
