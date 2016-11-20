@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './RecentSongUploads.scss';
+
 const RecentSongUploads = React.createClass({
   
   render() {

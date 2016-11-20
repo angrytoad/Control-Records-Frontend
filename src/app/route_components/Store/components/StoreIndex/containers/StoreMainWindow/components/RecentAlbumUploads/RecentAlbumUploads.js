@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './RecentAlbumUploads.scss';
+
 const RecentAlbumUploads = React.createClass({
 
   render() {

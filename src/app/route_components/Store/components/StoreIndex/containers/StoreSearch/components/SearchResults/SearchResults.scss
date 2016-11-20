@@ -5,42 +5,55 @@
   position: absolute;
   top: 100%;
   left: 90px;
-  background: #3D3D3D;
-  border-left: 5px solid $store_light_grey;
-  right: 0;
+  width:100%;
+  max-width:600px;
+  background: $store_dark_grey;
+  z-index:100;
+  border-left: 5px solid $store_blue;
+  border-bottom:5px solid $store_very_light_grey;
+  border-right:5px solid $store_very_light_grey;
   padding: 20px;
   color: $control_light_grey;
   padding-bottom:3rem;
 
+  h5{
+    margin:0px;
+
+    i{
+      color:$store_blue;
+    }
+  }
+
   .search-results-list{
     li{
-      margin-bottom:20px;
+      margin-bottom:10px;
 
       .result-heading{
         font-size:1.8rem;
-        font-weight:200;
+        font-weight:300;
         display:inline-block;
         margin:0px;
         border-radius:4px 4px 0px 0px;
+        color:$store_dark_grey;
       }
 
       &.artists{
         .result-heading{
-          background:$control_band_secondary;
+          background:$store_blue;
           padding:0px 15px;
         }
       }
 
       &.albums{
         .result-heading{
-          background:$control_gig_secondary;
+          background:$store_blue;
           padding:0px 15px;
         }
       }
 
       &.songs{
         .result-heading{
-          background:$control_news_secondary;
+          background:$store_blue;
           padding:0px 15px;
         }
       }
@@ -58,14 +71,11 @@
             background:$store_grey;
             padding:5px 15px;
             border-radius:0px 0px 0px 0px;
+            border:1px solid $store_light_grey;
             line-height: 48px;
 
             &:last-child{
               border-radius:0px 0px 4px 4px;
-            }
-
-            &:hover{
-              opacity:0.9;
             }
 
             .result-avatar{

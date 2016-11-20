@@ -15,7 +15,16 @@
 
     > .col:last-child{
       background:blue;
+      padding:0px;
     }
+  }
+
+  .featured-album-artist{
+    padding-left:0px;
+  }
+
+  .recently-purchased-wrapper{
+    padding-left:0px;
   }
 
   #LoadingTheStore{

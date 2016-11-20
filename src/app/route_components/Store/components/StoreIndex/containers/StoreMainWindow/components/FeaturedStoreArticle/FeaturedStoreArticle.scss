@@ -2,13 +2,13 @@
 
 #FeaturedStoreArticle{
   padding:0px;
-  max-height:350px;
+  max-height:400px;
   margin-bottom:0.75rem;
 
   .article-image{
     overflow:hidden;
-    max-height:350px;
-    height:350px;
+    max-height:400px;
+    height:400px;
     position: relative;
 
     img{
@@ -16,7 +16,7 @@
       left:50%;
       top:50%;
       max-width:900px;
-      min-height:350px;
+      min-height:400px;
       transform: translate(-50%, -50%);
     }
   }
@@ -28,8 +28,8 @@
       padding:20px;
       background:$store_grey;
       color:$control_light_grey;
-      max-height:350px;
-      height:350px;
+      max-height:400px;
+      height:400px;
       position: relative;
       overflow-y: auto;
 
@@ -45,7 +45,8 @@
     }
 
     button{
-      background:$control_news_secondary;
+      background:$store_blue;
+      border-radius:0px 3px 0px 0px;
       position: absolute;
       left:0.75rem;
       padding:0px;

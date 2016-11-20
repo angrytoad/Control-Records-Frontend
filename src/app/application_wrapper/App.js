@@ -11,6 +11,7 @@ import Menu from '../general_use/components/Menu/Menu';
  * styles go that aren't component/container specific.
  */
 import '../general_use/css/core.scss';
+import '../general_use/css/animate.css';
 import '../general_use/fonts/hacka.woff';
 import '../general_use/fonts/hacka.woff2';
 

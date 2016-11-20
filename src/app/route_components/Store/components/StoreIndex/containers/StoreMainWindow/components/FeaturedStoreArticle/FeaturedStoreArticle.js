@@ -13,7 +13,7 @@ const FeaturedStoreArticle = React.createClass({
     });
 
     let article_body = {
-      __html: truncate(marked(this.props.article.article_body),164,{ellipsis:'...'})
+      __html: truncate(marked(this.props.article.article_body),256,{ellipsis:'...'})
     };
 
     console.log(this.props.article);

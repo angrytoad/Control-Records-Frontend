@@ -5,6 +5,13 @@ import './SearchResults.scss';
 
 const SearchResults = React.createClass({
 
+  closeSearch(e) {
+    $('#SearchResults').removeClass('slideInDown').addClass('slideOutUp');
+    setTimeout(() => {
+      this.props.handleCloseResults(e)
+    },300);
+  },
+
   render() {
 
     let artists = this.props.results.artists.map((element, index) => {
@@ -43,7 +50,7 @@ const SearchResults = React.createClass({
 
     
     return (
-      <div id="SearchResults">
+      <div id="SearchResults" className="animated slideInDown quick">
         {
           resultCount > 0
           ?
@@ -93,7 +100,7 @@ const SearchResults = React.createClass({
               <h5>Unfortunately, there were no results that matched <i>'{this.props.search}'</i>, perhaps you might need to alter your query?</h5>
             </div>
         }
-        <i className="material-icons close-results" onClick={(e) => this.props.handleCloseResults(e)}>close</i>
+        <i className="material-icons close-results" onClick={(e) => this.closeSearch(e)}>close</i>
       </div>
     )
   }

@@ -11,6 +11,8 @@
     position: absolute;
     left:90px;
     border-left:5px solid $store_light_grey;
+    background:$store_grey;
+    z-index:101;
     right:0px;
     top:0px;
     bottom:0px;

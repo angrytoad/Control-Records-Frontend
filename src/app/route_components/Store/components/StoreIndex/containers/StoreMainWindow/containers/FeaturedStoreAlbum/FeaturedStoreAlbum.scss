@@ -1,0 +1,112 @@
+@import "../../../../../../../../general_use/css/core";
+
+#FeaturedStoreAlbum{
+  background:$store_grey;
+  color:$control_light_grey;
+  height:300px;
+  display:table;
+  border-right:1px solid $control_light_grey;
+  padding:0.75rem;
+
+  #FeaturedStoreAlbumArt{
+    width: 300px;
+    max-width: 300px;
+    height: 100%;
+    background: blue;
+    position: relative;
+    overflow: hidden;
+    border:1px solid $store_very_light_grey;
+    border-radius:3px;
+
+    img{
+      position: absolute;
+      left:50%;
+      top:50%;
+      max-width:300px;
+      min-height:300px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  #FeaturedStoreAlbumDetails{
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+    color:$control_light_grey;
+    padding-left: 0.75rem;
+
+    .featured-album{
+      margin:0px;
+      font-size:1.3rem;
+      font-weight:200;
+    }
+
+    .album-title{
+      margin:0px;
+    }
+
+    .album-artists{
+      font-size: 1.2rem;
+      width:100%;
+      margin:0px;
+      color:$store_blue;
+      margin-top:-5px;
+    }
+
+    #AlbumSongs{
+
+      tr{
+        &:nth-child(odd){
+          background:$store_dark_grey;
+          .song-play{
+            border-left:5px solid $store_light_grey;
+          }
+        }
+
+        &:nth-child(even){
+          background:$store_light_grey;
+          .song-play{
+            border-left:5px solid $store_dark_grey;
+          }
+        }
+      }
+
+      .song{
+
+        td{
+          padding:0px 0px;
+        }
+
+        .song-details{
+          padding-left:10px;
+          padding-right:5px;
+
+          a{
+            color:$control_light_grey;
+          }
+
+          i{
+            vertical-align: top;
+            float:right;
+            color:$store_blue;
+          }
+        }
+
+        .song-play{
+          text-align: center;
+          width:32px!important;
+
+          i{
+            vertical-align: top;
+            cursor:pointer;
+          }
+        }
+      }
+
+      .more-songs{
+        padding:0px 10px;
+        color:$store_blue;
+      }
+    }
+  }
+}

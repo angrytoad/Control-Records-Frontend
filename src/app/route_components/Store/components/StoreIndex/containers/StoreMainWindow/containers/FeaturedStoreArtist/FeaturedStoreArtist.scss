@@ -1,0 +1,110 @@
+@import "../../../../../../../../general_use/css/core";
+
+#FeaturedStoreArtist{
+  background:$store_grey;
+  color:$control_light_grey;
+  height:300px;
+  padding:0.75rem;
+  display:table;
+
+  #FeaturedStoreArtistArt{
+    width: 300px;
+    max-width: 300px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border:1px solid $store_very_light_grey;
+    border-radius:3px;
+
+    img{
+      position: absolute;
+      left:50%;
+      top:50%;
+      max-width:300px;
+      min-height:300px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  #FeaturedStoreArtistDetails{
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+    color:$control_light_grey;
+    padding-left: 0.75rem;
+
+    .featured-artist{
+      margin:0px;
+      font-size:1.3rem;
+      font-weight:200;
+    }
+
+    .artist-title{
+      margin:0px;
+    }
+
+    .album-artists{
+      font-size: 1.2rem;
+      width:100%;
+      margin:0px;
+      color:$store_blue;
+      margin-top:-5px;
+    }
+
+    #ArtistAlbums{
+
+      tr{
+        &:nth-child(odd){
+          background:$store_dark_grey;
+          .album-play{
+            border-left:5px solid $store_light_grey;
+          }
+        }
+
+        &:nth-child(even){
+          background:$store_light_grey;
+          .album-play{
+            border-left:5px solid $store_dark_grey;
+          }
+        }
+      }
+
+      .album{
+
+        td{
+          padding:0px 0px;
+        }
+
+        .album-details{
+          padding-left:10px;
+          padding-right:5px;
+
+          a{
+            color:$control_light_grey;
+          }
+
+          i{
+            vertical-align: top;
+            float:right;
+            color:$store_blue;
+          }
+        }
+
+        .album-play{
+          text-align: center;
+          width:32px!important;
+
+          i{
+            vertical-align: top;
+            cursor:pointer;
+          }
+        }
+      }
+
+      .more-albums{
+        padding:0px 10px;
+        color:$store_blue;
+      }
+    }
+  }
+}
