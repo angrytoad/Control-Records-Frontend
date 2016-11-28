@@ -2,6 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { Link } from 'react-router';
 
+import LinkOverlay from '../../../../../../../../general_use/components/Store/LinkOverlay/LinkOverlay';
+
 import './FeaturedStoreArtist.scss';
 
 const mapStateToProps = ({test}) =>
@@ -15,7 +17,6 @@ const mapDispatchToProps = dispatch =>
 const FeaturedStoreArtist = React.createClass({
 
   render() {
-    console.log(this.props.artist);
 
     let albumRows = this.props.artist.artist_albums.map((element, index) => {
       if(index < 8) {
@@ -31,6 +32,7 @@ const FeaturedStoreArtist = React.createClass({
           </tr>
         )
       }
+      return null;
     });
 
     return (
@@ -43,7 +45,7 @@ const FeaturedStoreArtist = React.createClass({
             :
               <img src="/assets/404avatar.png" />
           }
-
+          <LinkOverlay link={'/band/'+this.props.artist.url_safe_name} />
         </div>
         <div id="FeaturedStoreArtistDetails">
           <p className="featured-artist">Featured Artist</p>

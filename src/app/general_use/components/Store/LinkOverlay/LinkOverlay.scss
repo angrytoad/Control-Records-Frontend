@@ -1,0 +1,49 @@
+@import "../../../css/core";
+
+.LinkOverlay{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:transparent;
+  transition:all 0.3s;
+
+  table{
+    height: 100%;
+
+    td{
+      text-align: center;
+      padding:0px;
+
+      i{
+        border-radius:50%;
+        color:transparent;
+        font-size:4rem;
+        display:inline-block;
+        transition:all 0.3s;
+        border:2px solid transparent;
+      }
+    }
+  }
+
+
+
+  &:hover{
+    background:rgba(0,0,0,0.5);
+    transition:all 0.3s;
+
+    i{
+      color:$control_light_grey;
+
+      border:2px solid $control_light_grey;
+      opacity:0.8;
+      cursor:pointer;
+      transition:all 0.3s;
+
+      &:hover{
+        border:2px solid $store_blue;
+      }
+    }
+  }
+}

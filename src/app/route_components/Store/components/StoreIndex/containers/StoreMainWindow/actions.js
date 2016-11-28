@@ -22,6 +22,7 @@ export const requestFeaturedStoreInformation = () => {
       })
       .then(res => res.json())
       .then(json => {
+        console.log(json);
         dispatch(setFeaturedStoreInformation(json));
       })
       .catch(err => {

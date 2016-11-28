@@ -2,9 +2,81 @@
 
 #RecentAlbumUploads{
   height:400px;
-  background:turquoise;
+  background:$store_grey;
 
-  h2{
+  ul{
     margin:0px;
+    padding:0px;
+    height:100%;
+
+    li{
+      float:left;
+      width:50%;
+      height:50%;
+      position: relative;
+      overflow:hidden;
+      font-size:0px;
+      margin:0px;
+      padding:0px;
+
+
+
+      .album-image{
+        position: absolute;
+        width:180%;
+        height:180%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        img {
+          position: absolute;
+          min-width:300px;
+          min-height:300px;
+          width:80%;
+          bottom:0;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .album-details{
+        display:none;
+
+        h5{
+          color:$control_light_grey;
+          margin:0px;
+          font-size:1.6rem;
+          font-weight:300;
+        }
+
+        p{
+          color:$control_light_grey;
+          margin:0px;
+          font-size:1.1rem;
+          font-weight:300;
+
+          i{
+            font-size:2rem;
+            vertical-align: top;
+            margin-top:-3px;
+            cursor:pointer;
+
+            &:hover{
+              color: $store_blue;
+            }
+          }
+        }
+      }
+    }
   }
 }

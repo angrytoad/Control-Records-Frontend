@@ -42,12 +42,12 @@ const StoreMainWindow = React.createClass({
                   <FeaturedStoreArtist artist={this.props.featuredStoreInformation.featured_artist} />
                 </div>
                 <div className="col s12 recently-purchased-wrapper">
-                  <RecentlyPurchased />
+                  <RecentlyPurchased recently_purchased={this.props.featuredStoreInformation.recently_purchased_items} />
                 </div>
               </div>
               <div className="col s12 m12 l3">
-                <RecentSongUploads />
-                <RecentAlbumUploads />
+                <RecentSongUploads songs={this.props.featuredStoreInformation.recent_song_uploads}/>
+                <RecentAlbumUploads albums={this.props.featuredStoreInformation.recent_album_uploads}/>
               </div>
             </div>
           :

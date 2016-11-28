@@ -2,6 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { Link } from 'react-router';
 
+import PlayOverlay from '../../../../../../../../general_use/components/Store/PlayOverlay/PlayOverlay';
+
 import './FeaturedStoreAlbum.scss';
 
 const mapStateToProps = ({test}) =>
@@ -15,8 +17,7 @@ const mapDispatchToProps = dispatch =>
 const FeaturedStoreAlbum = React.createClass({
 
   render() {
-
-    console.log(this.props.album);
+    
     let artistString = Object.keys(this.props.album.album_artists).map((element, index) => {
       if(element === this.props.album.album_artists[Object.keys(this.props.album.album_artists)[Object.keys(this.props.album.album_artists).length - 1]]){
         return <span key={index}>{element}</span>
@@ -39,12 +40,14 @@ const FeaturedStoreAlbum = React.createClass({
             </tr>
           )
         }
+      return null;
     });
 
     return (
       <div id="FeaturedStoreAlbum" className="col s12 m12 l6">
         <div id="FeaturedStoreAlbumArt">
           <img src={this.props.album.album_image} />
+          <PlayOverlay item={this.props.album} />
         </div>
         <div id="FeaturedStoreAlbumDetails">
           <p className="featured-album">Featured Album</p>

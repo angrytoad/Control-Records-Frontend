@@ -4,8 +4,78 @@
   height:400px;
   background:green;
   margin-bottom:0.75rem;
+  overflow-y:auto;
 
-  h2{
+  ul{
     margin:0px;
+    display:flex;
+    height:100%;
+    flex-direction: column;
+
+    li{
+      display:flex;
+      flex-direction: row;
+      flex: 1;
+      padding:5px 10px;
+
+      &:nth-child(odd){
+        background:$store_grey;
+      }
+
+      &:nth-child(even){
+        background:$store_light_grey;
+      }
+
+      > div{
+        width:100%;
+
+        .song-image{
+          width:80px;
+          border-radius:3px;
+          overflow:hidden;
+          display:table-cell;
+          vertical-align: middle;
+          position: relative;
+
+          img {
+            width:100%;
+            display:block;
+          }
+        }
+
+        .song-details{
+          display:table-cell;
+          vertical-align: middle;
+          padding-left:0.75rem;
+
+          h5{
+            color:$control_light_grey;
+            margin:0px;
+            font-size:1.6rem;
+            font-weight:300;
+          }
+
+          p{
+            color:$control_light_grey;
+            margin:0px;
+            font-size:1.1rem;
+            font-weight:300;
+
+            i{
+              font-size:2rem;
+              vertical-align: top;
+              margin-top:-3px;
+              cursor:pointer;
+
+              &:hover{
+                color: $store_blue;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
   }
 }
