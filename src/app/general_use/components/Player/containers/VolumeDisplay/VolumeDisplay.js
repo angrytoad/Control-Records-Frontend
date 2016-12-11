@@ -17,6 +17,17 @@ const VolumeDisplay = React.createClass({
     }
   },
 
+  modifyVolumeTouchMove(e) {
+    let VolumeDisplay = document.getElementById("VolumeDisplay");
+    let offsetLeft = VolumeDisplay.offsetLeft;
+
+    let mouseX = e.clientX;
+
+    let relativeOffset = mouseX - offsetLeft;
+    let percentWidth = Math.ceil((100/150)*relativeOffset);
+    this.props.onVolumeChange(percentWidth);
+  },
+
   render() {
 
     let volumeWidth = {
@@ -24,7 +35,7 @@ const VolumeDisplay = React.createClass({
     };
 
     return (
-      <div id="VolumeDisplay" onMouseMove={(e) => this.modifyVolumeMove(e)} onTouchMove={(e) => this.modifyVolumeMove(e)}>
+      <div id="VolumeDisplay" onMouseMove={(e) => this.modifyVolumeMove(e)} onTouchMove={(e) => this.modifyVolumeTouchMove(e)}>
         <div style={volumeWidth} id="CurrentVolume"></div>
         <div id="CurrentVolumeText">{this.props.volume}%</div>
       </div>

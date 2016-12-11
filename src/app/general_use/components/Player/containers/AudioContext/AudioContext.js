@@ -80,6 +80,17 @@ const AudioContext = React.createClass({
     }
   },
 
+  modifySeekTouchMove(e) {
+    let Seeker = document.getElementById("seeker");
+    let offsetLeft = Seeker.offsetLeft;
+
+    let mouseX = e.clientX;
+
+    let relativeOffset = mouseX - offsetLeft;
+    let percentWidth = Math.ceil((100/Seeker.offsetWidth)*relativeOffset);
+    this.setSeek(percentWidth);
+  },
+
   handleToggleLooping(){
     if(this.state.looping){
       this.setState({
@@ -160,7 +171,7 @@ const AudioContext = React.createClass({
             <i className="material-icons" onClick={() => this.handleSkipNext()}>skip_next</i>
           </div>
         </div>
-        <div id="seeker" onMouseMove={(e) => this.modifySeekMove(e)} onTouchMove={(e) => this.modifySeekMove(e)}>
+        <div id="seeker" onMouseMove={(e) => this.modifySeekMove(e)} onTouchMove={(e) => this.modifySeekTouchMove(e)}>
           <div id="seeker-bar" style={seekWidth}></div>
         </div>
         {
