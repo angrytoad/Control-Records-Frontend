@@ -20,11 +20,11 @@ const VolumeDisplay = React.createClass({
   render() {
 
     let volumeWidth = {
-      width: this.props.volume+'%',
+      width: this.props.volume+'%'
     };
 
     return (
-      <div id="VolumeDisplay" onMouseMove={(e) => this.modifyVolumeMove(e)}>
+      <div id="VolumeDisplay" onMouseMove={(e) => this.modifyVolumeMove(e)} onTouchMove={(e) => this.modifyVolumeMove(e)}>
         <div style={volumeWidth} id="CurrentVolume"></div>
         <div id="CurrentVolumeText">{this.props.volume}%</div>
       </div>

@@ -160,7 +160,7 @@ const AudioContext = React.createClass({
             <i className="material-icons" onClick={() => this.handleSkipNext()}>skip_next</i>
           </div>
         </div>
-        <div id="seeker" onMouseMove={(e) => this.modifySeekMove(e)}>
+        <div id="seeker" onMouseMove={(e) => this.modifySeekMove(e)} onTouchMove={(e) => this.modifySeekMove(e)}>
           <div id="seeker-bar" style={seekWidth}></div>
         </div>
         {
