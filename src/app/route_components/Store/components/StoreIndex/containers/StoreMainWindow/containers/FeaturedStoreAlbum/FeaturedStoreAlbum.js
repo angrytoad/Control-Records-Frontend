@@ -4,17 +4,50 @@ import { Link } from 'react-router';
 
 import PlayOverlay from '../../../../../../../../general_use/components/Store/PlayOverlay/PlayOverlay';
 
+import { addSongToPlaylist, addAlbumToPlaylist, setAndPlay, stopAndClear } from '../../../../../../../../general_use/components/Player/actions';
+
 import './FeaturedStoreAlbum.scss';
 
-const mapStateToProps = ({test}) =>
+const mapStateToProps = ({playlist}) =>
   ({
-    test
+    playlist
   });
 
 const mapDispatchToProps = dispatch =>
-  ({});
+  ({
+    addSongToPlaylist: (song) => dispatch(addSongToPlaylist(song)),
+    addAlbumToPlaylist: (album) => dispatch(addAlbumToPlaylist(album)),
+    setAndPlay: (song) => dispatch(setAndPlay(song)),
+    stopAndClear: () => dispatch(stopAndClear()),
+  });
 
 const FeaturedStoreAlbum = React.createClass({
+
+  handleChangeAndPlay(newContext) {
+    this.props.stopAndClear();
+    this.props.setAndPlay(newContext);
+  },
+
+  handlePlayEvent(item) {
+    let found = false;
+    if(typeof item.sample_url !== 'undefined') {
+      for (let i = 0; i < this.props.playlist.length; i++) {
+        if (this.props.playlist[i].id === item.id) {
+          found = true;
+        }
+      }
+      if (!found) {
+        if (this.props.playlist.length === 0) {
+          this.props.addSongToPlaylist(item);
+          this.props.setAndPlay(item);
+        } else {
+          this.props.addSongToPlaylist(item);
+        }
+      } else {
+        this.handleChangeAndPlay(item);
+      }
+    }
+  },
 
   render() {
     
@@ -27,14 +60,14 @@ const FeaturedStoreAlbum = React.createClass({
     });
 
     let songRows = this.props.album.album_songs.map((element, index) => {
-        if(index < 8) {
+        if(index < 6) {
           return (
             <tr key={index} className="song">
               <td className="song-details">
-                <Link to={"/store/song/"+element.song_url}>{index+1}. {element.song_name}</Link>
+                <Link to={"/store/song/"+element.url_safe_name}>{index+1}. {element.song_name}</Link>
                 <i className="material-icons">add_shopping_cart</i>
               </td>
-              <td className="song-play">
+              <td className="song-play" onClick={() => this.handlePlayEvent(element)}>
                 <i className="material-icons">play_arrow</i>
               </td>
             </tr>
@@ -57,11 +90,11 @@ const FeaturedStoreAlbum = React.createClass({
             <tbody>
               {songRows}
               {
-                this.props.album.album_songs.length > 8
+                this.props.album.album_songs.length > 6
                 ?
                   <tr>
                     <td className="more-songs">
-                      ...and <strong>{this.props.album.album_songs.length - 8}</strong> more.
+                      ...and <strong>{this.props.album.album_songs.length - 6}</strong> more.
                     </td>
                     <td className="song-play">
                     </td>

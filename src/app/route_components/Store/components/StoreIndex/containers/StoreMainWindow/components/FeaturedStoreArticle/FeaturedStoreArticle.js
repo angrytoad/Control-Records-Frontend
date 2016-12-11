@@ -13,15 +13,13 @@ const FeaturedStoreArticle = React.createClass({
     });
 
     let article_body = {
-      __html: truncate(marked(this.props.article.article_body),256,{ellipsis:'...'})
+      __html: truncate(marked(this.props.article.article_body),224,{ellipsis:'...'}) 
     };
-
-    console.log(this.props.article);
 
     return (
       <div id="FeaturedStoreArticle" className="col s12">
         <div className="row">
-          <div className="col s12 m7 article-image">
+          <div className="col s12 m7 article-image hide-on-small-only">
             <img src={this.props.article.article_banner} />
           </div>
           <div className="col s12 m5 article-text-wrapper">

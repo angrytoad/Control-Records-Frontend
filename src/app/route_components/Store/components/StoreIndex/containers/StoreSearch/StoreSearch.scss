@@ -1,11 +1,14 @@
 @import "../../../../../../general_use/css/core";
 
 #StoreSearch{
-  height:64px;
-  background:$store_grey;
-  position: relative;
-  width:100%;
-  display:inline-block;
+  height: 64px;
+  background: $store_grey;
+  position: fixed;
+  width: 100%;
+  display: inline-block;
+  z-index: 10;
+  border-bottom: 1px solid $control_black;
+  box-shadow: 0px 0px 15px $control_black;
 
   #StoreSearchBar{
     position: absolute;
@@ -32,10 +35,10 @@
       font-weight: 200;
       color:$control_light_grey;
 
-      &::-webkit-input-placeholder { color: $control_image_backer; }
-      &:-moz-placeholder { color: $control_image_backer; }
-      &::-moz-placeholder { color: $control_image_backer; }
-      &:-ms-input-placeholder { color: $control_image_backer; }
+      &::-webkit-input-placeholder { color: $store_blue; }
+      &:-moz-placeholder { color: $store_blue; }
+      &::-moz-placeholder { color: $store_blue; }
+      &:-ms-input-placeholder { color: $store_blue; }
 
       &:focus{
         border-bottom:none;

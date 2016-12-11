@@ -5,6 +5,7 @@ import DevTools from '../../_dev/DevTools';
 import './App.scss';
 
 import Menu from '../general_use/components/Menu/Menu';
+import Player from '../general_use/components/Player/Player';
 
 /**
  * Import any other fonts that aren't part of materialize and the general stylesheet as this is where core
@@ -47,6 +48,7 @@ const App = (props) => {
       />
       <Menu />
       {props.children}
+      <Player />
       {environment === 'development'
         ?
         <DevTools />

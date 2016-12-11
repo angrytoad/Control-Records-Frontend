@@ -1,0 +1,33 @@
+@import "../../../.././css/core";
+
+#VolumeDisplay{
+  display:inline-block;
+  margin-left:10px;
+  vertical-align: top;
+  margin-top:-2px;
+  padding:5px;
+  width:150px;
+  background:$store_very_light_grey;
+  height:40px;
+  position: relative;
+  cursor:pointer;
+
+  #CurrentVolume{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    background:$store_blue;
+    opacity:1;
+  }
+
+  #CurrentVolumeText{
+    @include no-select();
+    position: absolute;
+    left:10px;
+    top:3px;
+    font-size:1.6rem;
+    color:$control_light_grey;
+    text-shadow:1px 1px 1px $store_very_light_grey;
+  }
+}

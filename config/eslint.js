@@ -108,7 +108,7 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
-    'no-return-assign': WARNING,
+ //   'no-return-assign': WARNING, 
     'no-script-url': WARNING,
     'no-self-assign': WARNING,
     'no-self-compare': WARNING,

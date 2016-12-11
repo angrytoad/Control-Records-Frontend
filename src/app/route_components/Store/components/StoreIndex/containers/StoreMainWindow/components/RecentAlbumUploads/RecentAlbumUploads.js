@@ -7,8 +7,7 @@ import './RecentAlbumUploads.scss';
 const RecentAlbumUploads = React.createClass({
 
   render() {
-
-    console.log(this.props.albums);
+    
 
     let albums = this.props.albums.map((element, index) => {
       return (

@@ -6,14 +6,13 @@ import PlayOverlay from '../../../../../../../../general_use/components/Store/Pl
 const RecentSongUploads = React.createClass({
   
   render() {
-
-    console.log(this.props.songs);
+    
 
     let songs = this.props.songs.map((element, index) => {
         return (
           <li key={index} className="valign-wrapper"> 
             <div className="valign">
-              <div className="song-image hide-on-med-and-down">
+              <div className="song-image">
                 {
                   element.artist_avatar !== false
                   ?

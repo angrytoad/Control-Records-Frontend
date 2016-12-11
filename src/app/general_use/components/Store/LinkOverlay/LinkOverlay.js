@@ -11,8 +11,6 @@ const LinkOverlay = React.createClass({
 
   render() {
 
-    console.log(this.props.item);
-
     return (
       <div className="LinkOverlay">
         <table>
